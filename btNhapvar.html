@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap nhap bien</title>
+</head>
+<body>
+<script>
+  var physics
+  var chemistry
+  var biology
+  physics=prompt('nhap diem vly')
+  chemistry=prompt('nhap diem hoa')
+  biology=prompt('nhap diem sinh')
+  let phy=parseInt(physics)
+   let chem=parseInt(chemistry)
+   let bio=parseInt(biology)
+  average=(phy+chem+bio)/3
+  document.write('<br>diem TB='+average)
+  tong=phy+chem+bio
+  document.write('<br>tong diem='+tong)
+  var doC
+  doC=prompt('nhap do C:')
+  let C=parseInt(doC)
+  doF=32+((C*9)/5)
+  document.write('<br>do F duoc chuyen doi='+doF)
+  var bankinh01
+  bankinh01=prompt('nhap ban kinh 1')
+  let bk01=parseInt(bankinh01)
+  dientich=3.14*bk01*bk01
+  document.write('<br>dien tich='+dientich)
+  var bankinh02
+  bankinh02=prompt('nhap ban kinh 2')
+  let bk02=parseInt(bankinh02)
+  chuvi=3.14*bk02
+  document.write('<br>chu vi='+chuvi)
+</script>
+</body>
+</html>
