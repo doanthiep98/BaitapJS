@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+
+<img id="sanic" style="position:absolute;left:0; top:0;" height="200" width="160" src="https://i.pinimg.com/originals/3a/32/93/3a3293f361397a67b97f400ffe0c3bd5.gif">
+</body>
+</html>
+<script>
+  function upArrowPressed() {
+    let element = document.getElementById("sanic");
+    element.style.top = parseInt(element.style.top) - 35 + 'px';
+  }
+  function downArrowPressed() {
+    let element = document.getElementById("sanic");
+    element.style.top = parseInt(element.style.top) + 35 + 'px';
+  }
+  function leftArrowPressed() {
+    let element = document.getElementById("sanic");
+    element.style.left = parseInt(element.style.left) - 35 + 'px';
+  }
+  function rightArrowPressed() {
+    let element = document.getElementById("sanic");
+    element.style.left = parseInt(element.style.left) + 35 + 'px';
+  }
+  function moveselection(evt){
+    switch (evt.keyCode) {
+      case 37:
+        leftArrowPressed();
+        break;
+      case 39:
+        rightArrowPressed();
+        break;
+      case 38:
+        upArrowPressed();
+        break;
+      case 40:
+        downArrowPressed();
+        break;
+    }
+  }
+  function docReady() {
+    window.addEventListener('keydown', moveselection);
+  }
+
+</script>
