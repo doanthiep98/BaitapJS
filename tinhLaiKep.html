@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let stock,month,profit
+  stock=+prompt("Nhập số tiền gửi")
+  month=+prompt("Nhập số tháng")
+  profit=parseFloat(prompt("Nhập lãi suất hàng tháng"))
+  for (i=0;i<month;i++){
+    stock=(stock+stock*profit)
+  }
+  document.write("Tổng thu nhập của bạn là:"+stock)
+</script>
+</body>
+</html>
