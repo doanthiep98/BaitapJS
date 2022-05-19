@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="meterToFoot()">Chuyen doi met</button>
+<button onclick="footToMeter()">Chuyen doi foot</button>
+
+</body>
+<script>
+  function meterToFoot(){
+    meter=+prompt("nhập số mét muốn chuyển đổi")
+    foot = 3.279 * meter
+    alert("số foot chuyển từ mét:"+foot)
+  }
+
+  function footToMeter(){
+    foot=+prompt("nhập số foot muốn chuyển đổi")
+    meter = 0.305 * foot
+    alert("số mét chuyển từ food:"+meter)
+  }
+
+</script>
+</html>
